@@ -1,0 +1,167 @@
+body {
+    background-color: #F0EDE8;
+}
+  
+
+  
+.text-right {
+    right: 6px; /* Adjust as needed */
+    position: absolute;
+    top: 15px;
+    font-family: "Avenir", sans-serif;
+    font-size: small;
+  }
+  
+  .logo img {
+    width: 200px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+    top:0%;
+}
+  
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 230px; /* Adjust as needed to create space below the header */
+}
+
+.text-right span,
+.text-right a {
+    margin-left: 5px; /* Add some spacing between the text elements */
+    color: rgb(116, 106, 106);
+    background-color: transparent; /* Make the background transparent */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove default underline */
+}
+
+.text-right span:hover,
+.text-right a:hover {
+color: #dcb65b;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover */
+}
+
+.text-bott {
+    margin-top: 30px; /* Adjust top margin as needed */
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: auto; /* Remove bottom positioning */
+    width: 100%; /* Make it span the full width */
+    z-index: 1;
+    margin-bottom: 5px; /* Adjust as needed to reduce the space */
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-bott h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Optional */
+    font-size: 28px; /* Adjust size as needed */
+}
+
+
+
+
+.text-bott p {
+    margin: 5px 0; /* Adjust as needed to reduce the space */
+    font-size: 15px; /* Set the font size to your desired size */
+
+}
+
+
+form {
+    width: calc(60% - 10px); /* Adjust width as needed */
+    margin-left: 80px; /* Add some margin to the left */
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+.add-info {
+    position: absolute;
+    top: 320px; /* Adjust the value as needed */
+    right: 10px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.add-info .add-title {
+    font-size: 18px; /* Adjust the font size for the title */
+    margin-bottom: 5px; /* Reduce the margin between the title and email */
+    color: #CF9874; /* Accent color */
+    font-weight: normal;
+}
+
+.add-info .add-email {
+    font-size: 14px; /* Adjust the font size for the email */
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 160px;
+}
+
+.social-icons a {
+    margin: 0 5px; /* Add margin between icons */
+    padding: 5px; /* Add padding to adjust spacing */
+}
+
+
+
+.social-icons img {
+    width: 26px;
+    height: auto;
+}
+
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Remove default border */
+    border-bottom: 1px solid #000000; /* Add bottom border */
+    border-radius: 0; /* Set border-radius to 0 for clean rectangle */
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #F0EDE8;
+}
+
+
+button[type="submit"] {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    padding: 10px 55px; /* Adjust padding to increase width */
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 16px;
+
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #F0EDE8;
+    transition: color 0.3s ease;
+}
+
+button:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+
+
+

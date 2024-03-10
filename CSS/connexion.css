@@ -1,0 +1,142 @@
+body {
+    background-color: #F0EDE8;
+}
+  
+
+
+  .text-right {
+    right: 6px; /* Adjust as needed */
+    position: absolute;
+    top: 15px;
+    font-family: "Avenir", sans-serif;
+    font-size: small;
+  }
+  
+  .logo img {
+    width: 350px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+  
+  
+main {
+    padding-top: 250px; /* Adjust as needed to create space below the logo */
+  }
+
+.text-right span,
+.text-right a {
+    margin-left: 5px; /* Add some spacing between the text elements */
+    color: rgb(116, 106, 106);
+    background-color: transparent; /* Make the background transparent */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Avenir", sans-serif;
+    text-decoration: none; /* Remove default underline */
+}
+
+.text-right span:hover,
+.text-right a:hover {
+color: #dcb65b;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover */
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-between; /* Separate left and right blocks */
+}
+
+
+.right-block {
+    width: 70%; /* Adjust width as needed */
+    margin-left: -260px; /* Move the right block to the right */
+    margin-top: -180px; /* Adjust the top margin as needed */
+    margin-right: auto;
+    text-align: center;
+}
+
+.right-block h2 {
+    font-size: 20px;
+    white-space: nowrap; /* Prevent wrapping of the text */
+    margin-bottom: 10px; /* Adjust margin bottom as needed */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+.right-block a {
+    display: inline-block; /* Ensure the link behaves like a block element */
+    width: 360px; /* Adjust the width as needed */
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 2px solid #000; /* Add border */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #F0EDE8;
+    text-decoration: none; /* Remove default underline */
+    color: #000; /* Set text color */
+    transition: color 0.3s ease;
+}
+
+.right-block a:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+
+.left-block {
+    width: 70%; /* Adjust width as needed */
+    margin-right: 566px; /* Move the left block to the left */
+    margin-top: -150px; /* Adjust the top margin as needed */
+    margin-left: auto;
+    text-align: left;
+}
+
+.left-block h2 {
+    font-size: 20px;
+    margin-bottom: 35px;
+    white-space: nowrap; /* Prevent wrapping of the text */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+.left-block .form-group {
+    margin-bottom: 20px; /* Add margin between form groups */
+}
+
+.left-block label {
+    display: block; /* Display labels on a new line */
+    text-align: left; /* Align text to the left */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
+    color: rgb(67, 65, 65);
+}
+
+.left-block input {
+    width: 100%; /* Set input width to 100% */
+    padding: 10px; /* Add padding to inputs */
+    border: none; /* Remove default border */
+    border-bottom: 1px solid #000000; /* Add bottom border */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    background-color: #F0EDE8;
+}
+
+
+.left-block button {
+    width: 360px; /* Adjust the width as needed */
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #F0EDE8;
+    transition: color 0.3s ease;
+}
+
+.left-block button:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+

@@ -1,0 +1,148 @@
+/* Resetting default margin and padding for body and header */
+body, header {
+  position: relative; /* Ensure the header is positioned relatively */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide any overflow content */
+  }
+ 
+  .logo img {
+    position: absolute;
+    width: 350px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+    top: 8px;
+    left: 0;
+    z-index: 1; /* Ensure the logo is above other content */
+} 
+
+ 
+  
+  .text-right {
+    right: 6px; /* Adjust as needed */
+    position: absolute;
+    top: 15px;
+    font-family: "Avenir", sans-serif;
+    font-size: medium;
+    z-index: 1; /* Ensure the text is above the background image */
+  }
+  
+
+  
+.text-right span,
+.text-right a {
+    margin-left: 5px; /* Add some spacing between the text elements */
+    color: white;
+    background-color: transparent; /* Make the background transparent */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Avenir", sans-serif;
+    text-decoration: none; /* Remove default underline */
+}
+
+.text-right span:hover,
+.text-right a:hover {
+color: #dcb65b;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover */
+}
+
+   .image {
+    /*position: absolute;*/
+    top: 0;
+    left: 50%;
+    /*transform: translateX(-50%);*/
+    width: 100vw; /* Set the width to cover the viewport width */
+    max-height: 100%; /* Set a maximum height to maintain aspect ratio */
+  }
+  .text-on-image {
+    position: absolute;
+    top: 25%; /* Place le texte au milieu verticalement */
+    left: 25%; /* Place le texte au milieu horizontalement */
+    transform: translate(-50%, -50%); /* Centre le texte par rapport à son propre centre */
+    text-align: center; /* Centre le texte horizontalement */
+    color: white; /* Couleur du texte */
+    font-size: 18px; /* Taille du texte */
+    font-weight: normal; /* Pas de mise en gras */
+    font-family: 'Avenir', sans-serif; /* Changer la police */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombre du texte pour une meilleure lisibilité */
+    line-height: 0.7; /* Espacement des lignes */
+}
+
+
+.button {
+  position: absolute;
+  top: 75%; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent; /* Transparent background by default */
+  color: #ffffff; /* Text color */
+  padding: 15px 60px; /* Increase horizontal padding to make the button wider */
+  border: 2px solid white; /* White border */
+  border-radius: 100px; /* Adjust border-radius to make the button rounder */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  display: inline-block;
+  z-index: 1; /* Ensure the text is above the background image */
+
+}
+
+.button:hover {
+    background-color: #dcb65b; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    box-shadow: 0 0 10px 3px rgba(220, 182, 91, 0.7); /* Glow effect */
+}
+
+.top-text,
+.bottom-text {
+    font-family: 'Avenir', sans-serif;
+    display: block; /* Make the text elements block-level */
+    font-size: 20px;
+    margin: 5px 0; /* Add space between top and bottom text */
+}
+
+footer {
+  background-color: #333; /* Background color of the footer */
+  color: white; /* Text color */
+  padding: 20px 0; /* Padding inside the footer */
+  text-align: center; /* Center align text */
+}
+
+footer a {
+  color: #dcb65b; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+
+
+
+
+/* Width */
+::-webkit-scrollbar {
+  width: 12px; /* width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scrollbar handle on hover */
+}

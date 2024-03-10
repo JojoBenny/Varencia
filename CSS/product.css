@@ -1,0 +1,261 @@
+/* Resetting default margin and padding for body and header */
+body, header, main {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F0EDE8;
+}
+  
+
+  
+  .text-left,
+  .text-right {
+    position: absolute;
+    top: 0;
+
+
+  }
+  
+  .text-left {
+    left: 15px; /* Adjust as needed */
+    top: 20px;
+  }
+  
+  .text-right {
+    right: 6px; /* Adjust as needed */
+    top: 15px;  
+    font-family: "Avenir", sans-serif;
+    font-size: small;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #dcb65b;
+    background-color: transparent; /* Make the background transparent */
+        text-decoration: none; /* Remove underline */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: "Varela Round", sans-serif;
+}
+  
+main {
+    padding-top: 100px; /* Adjust as needed to create space below the logo */
+  }
+
+.text-right span,
+.text-right a {
+    margin-left: 5px; /* Add some spacing between the text elements */
+    color: rgb(116, 106, 106);
+    background-color: transparent; /* Make the background transparent */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Avenir", sans-serif;
+    text-decoration: none; /* Remove default underline */
+}
+
+.text-right span:hover,
+.text-right a:hover {
+color: #dcb65b;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover */
+}
+
+.imageprod img {
+    width: 550px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse; /* Reversing the order of flex items */
+    justify-content: space-between; /* Aligning items to the start and end of the container */
+    align-items: center; /* Aligning items vertically */
+    background-color: #F0EDE8; /* Set the background color to match the picture */
+    padding: 20px; /* Adding some padding for spacing */
+}
+
+.imageprod {
+    flex: 1; /* Making the image container flexible to take available space */
+    margin-right: 20px; /* Adding some margin for spacing */
+    margin-top: 120px; /* Adjust the margin to move the image down */
+}
+
+
+.imageprod img {
+    max-width: 100%; /* Making sure the image doesn't exceed its container */
+    height: auto; /* Maintaining aspect ratio */
+    animation: appear 0.5s ease-out; /* Apply the animation */
+}
+
+.text-content {
+    flex: 1; /* Making the text container flexible */
+    margin-left: 20px; /* Adding some margin for spacing */
+    color: #2F2E2D; /* Setting text color to white for better contrast */
+    padding: 20px; /* Adding some padding for spacing */
+ 
+}
+
+
+.text-content h1 {
+    font-size: 32px;
+    margin-bottom: 0px;
+    font-family: 'Aktiv Grotesk', sans-serif;
+   margin-top: 120px; /* Add margin to push content down */
+}
+
+.text-content h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    margin-top: -5px;  
+    font-family: 'Aktiv Grotesk', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.text-content p {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 30px;
+    font-family: 'Aktiv Grotesk', sans-serif;
+
+}
+
+
+
+
+
+
+/* Style for size selection */
+.size-selection {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.size-selection label {
+    font-size: smaller;
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Aktiv Grotesk', sans-serif;
+
+}
+
+.size-selection select {
+    padding: 10px; /* Adjust padding for spacing */
+    width: 80%; /* Make the select element fill its container */
+    border: 2px solid #2F2E2D; /* Add a border */
+    border-radius: 0; /* Remove border-radius to make sharp corners */
+    appearance: none; /* Remove default appearance */
+    background-color: transparent; /* Make background transparent */
+    color: #2F2E2D; /* Set text color */
+    font-size: 16px;
+    cursor: pointer;
+    outline: none; /* Remove outline on focus */
+}
+
+.size-selection::after {
+    content: '\25BC'; /* Down arrow character */
+    font-size: 16px;
+    position: absolute;
+    top: 45px;
+    right: 130px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #2F2E2D; /* Set arrow color */
+}
+
+.size-selection select:focus {
+    border-color: #2F2E2D; /* Change border color on focus */
+}
+
+.size-selection select option {
+    background-color: #F0EDE8; /* Set background color for options */
+    color: #2F2E2D; /* Set text color for options */
+    border: none;
+    padding: 5px; /* Adjust padding */
+}
+
+.size-selection select option:hover {
+    background-color: #D1CBC5; /* Set background color for options on hover */
+    color: #2F2E2D; /* Set text color for options on hover */
+}
+
+
+
+
+
+
+/* Style for quantity selection */
+.quantity-selection {
+    margin-bottom: 20px;
+    position: relative; /* Add relative positioning to the container */
+}
+
+.quantity-selection label {
+    font-family: 'Aktiv Grotesk', sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.quantity-selection input[type="number"] {
+    padding: 10px;
+    width: 100px; /* Adjust width as needed */
+    border: 2px solid #2F2E2D;
+    border-radius: 0;
+    appearance: none;
+    background-color: transparent;
+    color: #2F2E2D;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* Clear button styling */
+.quantity-selection button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #2F2E2D;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+
+
+
+#add-to-cart {
+    background-color: transparent;
+    border: 2px solid #2F2E2D;
+    border-radius: 50px; /* Use a large value to create a pill shape */
+    color: #2F2E2D;
+    padding: 8px 180px; /* Adjust padding to make the button longer */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#add-to-cart:hover {
+    background-color: #2F2E2D;
+    color: #FFFFFF;
+}
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+        transform: translateY(50px); /* Start slightly below and move up */
+    }
+    to {
+        opacity: 1; /* End with opacity 1 */
+        transform: translateY(0); /* End at original position */
+    }
+}

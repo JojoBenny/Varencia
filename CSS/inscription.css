@@ -1,0 +1,115 @@
+body {
+    background-color: #F0EDE8;
+}
+  
+
+
+  .text-right {
+    right: 6px; /* Adjust as needed */
+    position: absolute;
+    top: 15px;
+    font-family: "Avenir", sans-serif;
+    font-size: small;
+  }
+  
+  .logo img {
+    width: 350px; /* Adjust the width of the image as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+  
+  
+main {
+    padding-top: 55px; /* Adjust as needed to create space below the logo */
+  }
+
+.text-right span,
+.text-right a {
+    margin-left: 5px; /* Add some spacing between the text elements */
+    color: rgb(116, 106, 106);
+    background-color: transparent; /* Make the background transparent */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Avenir", sans-serif;
+    text-decoration: none; /* Remove default underline */
+}
+
+.text-right span:hover,
+.text-right a:hover {
+color: #dcb65b;
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover */
+}
+
+
+
+main {
+    display: flex;
+    justify-content: space-between; /* Separate left and right blocks */
+}
+
+
+.left-block {
+    width: 70%; /* Adjust width as needed */
+    text-align: left;
+}
+
+.left-block h2 {
+    font-size: 20px;
+    margin-bottom: 20px; /* Adjust margin bottom */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+.left-block .form-group {
+    margin-bottom: 10px; /* Add margin between form groups */
+}
+
+.left-block label {
+    display: block; /* Display labels on a new line */
+    text-align: left; /* Align text to the left */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
+    color: rgb(67, 65, 65);
+}
+.left-block input[type="email"],
+.left-block input[type="password"],
+.left-block input[type="tel"],
+.left-block input[type="text"] {
+    width: 70%; /* Adjust the width as needed */
+    padding: 10px; /* Add padding to inputs */
+    border: none; /* Remove default border */
+    border-bottom: 1px solid #000000; /* Add bottom border */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    background-color: #F0EDE8;
+}
+
+
+.left-block button {
+    width: 360px; /* Adjust the width as needed */
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #F0EDE8;
+    transition: color 0.3s ease;
+}
+
+.left-block button:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+
+.checkbox-group label {
+    display: flex; /* Use flexbox */
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 12px;
+    color: rgb(67, 65, 65);
+    margin-bottom: 5px; /* Add some space between each checkbox and label */
+}
+
+
+
