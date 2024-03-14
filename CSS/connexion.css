@@ -97,37 +97,37 @@ main {
 .left-block h2 {
     font-size: 20px;
     margin-bottom: 35px;
-    white-space: nowrap; /* Prevent wrapping of the text */
+    white-space: nowrap; 
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: normal;
 }
 
 .left-block .form-group {
-    margin-bottom: 20px; /* Add margin between form groups */
+    margin-bottom: 20px; 
 }
 
 .left-block label {
-    display: block; /* Display labels on a new line */
-    text-align: left; /* Align text to the left */
+    display: block; 
+    text-align: left; 
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-size: 12px;
     color: rgb(67, 65, 65);
 }
 
 .left-block input {
-    width: 100%; /* Set input width to 100% */
-    padding: 10px; /* Add padding to inputs */
-    border: none; /* Remove default border */
-    border-bottom: 1px solid #000000; /* Add bottom border */
+    width: 100%; 
+    padding: 10px; 
+    border: none; 
+    border-bottom: 1px solid #000000; 
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-size: 16px;
-    box-sizing: border-box; /* Include padding and border in the element's total width */
+    box-sizing: border-box;
     background-color: #F0EDE8;
 }
 
 
 .left-block button {
-    width: 360px; /* Adjust the width as needed */
+    width: 360px; 
     padding: 10px 20px;
     margin-top: 10px;
     font-size: 16px;
@@ -137,7 +137,7 @@ main {
 }
 
 .left-block button:hover {
-    color: #fff; /* Change text color on hover */
+    color: #fff; 
 }
 
 
