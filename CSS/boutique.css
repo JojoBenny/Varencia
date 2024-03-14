@@ -95,9 +95,6 @@ text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover
     color: rgb(0, 0, 0);
   }
   
-
-
-
 /* Width */
 ::-webkit-scrollbar {
   width: 12px; /* width of the scrollbar */
