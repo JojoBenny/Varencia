@@ -1,3 +1,4 @@
+/* Melissa */
 body {
     background-color: #F0EDE8;
 }
@@ -5,7 +6,7 @@ body {
 
 
   .text-right {
-    right: 6px; /* Adjust as needed */
+    right: 6px; 
     position: absolute;
     top: 15px;
     font-family: "Avenir", sans-serif;
@@ -13,8 +14,8 @@ body {
   }
   
   .logo img {
-    width: 350px; /* Adjust the width of the image as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 350px; 
+    height: auto; 
     display: inline-block;
     vertical-align: middle;
 }
@@ -51,9 +52,9 @@ main {
 
 
 .right-block {
-    width: 70%; /* Adjust width as needed */
-    margin-left: -260px; /* Move the right block to the right */
-    margin-top: -180px; /* Adjust the top margin as needed */
+    width: 70%; 
+    margin-left: -260px; 
+    margin-top: -180px; 
     margin-right: auto;
     text-align: center;
 }
@@ -72,23 +73,23 @@ main {
     padding: 10px 20px;
     margin-top: 10px;
     font-size: 16px;
-    border: 2px solid #000; /* Add border */
+    border: 2px solid #000; 
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     background-color: #F0EDE8;
-    text-decoration: none; /* Remove default underline */
-    color: #000; /* Set text color */
+    text-decoration: none; 
+    color: #000; 
     transition: color 0.3s ease;
 }
 
 .right-block a:hover {
-    color: #fff; /* Change text color on hover */
+    color: #fff; 
 }
 
 
 .left-block {
-    width: 70%; /* Adjust width as needed */
-    margin-right: 566px; /* Move the left block to the left */
-    margin-top: -150px; /* Adjust the top margin as needed */
+    width: 70%;
+    margin-right: 566px; 
+    margin-top: -150px; 
     margin-left: auto;
     text-align: left;
 }
