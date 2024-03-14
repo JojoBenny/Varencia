@@ -5,7 +5,7 @@ body {
 
 
   .text-right {
-    right: 6px; /* Adjust as needed */
+    right: 6px;
     position: absolute;
     top: 15px;
     font-family: "Avenir", sans-serif;
@@ -13,8 +13,8 @@ body {
   }
   
   .logo img {
-    width: 350px; /* Adjust the width of the image as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 350px; 
+    height: auto; 
     display: inline-block;
     vertical-align: middle;
 }
@@ -22,31 +22,31 @@ body {
   
   
 main {
-    padding-top: 100px; /* Adjust as needed to create space below the logo */
+    padding-top: 100px; 
   }
 
 .text-right span,
 .text-right a {
-    margin-left: 5px; /* Add some spacing between the text elements */
+    margin-left: 5px; 
     color: rgb(116, 106, 106);
-    background-color: transparent; /* Make the background transparent */
+    background-color: transparent; 
     padding: 10px 15px;
     border-radius: 5px;
     font-family: "Avenir", sans-serif;
-    text-decoration: none; /* Remove default underline */
+    text-decoration: none;
 }
 
 .text-right span:hover,
 .text-right a:hover {
 color: #dcb65b;
-text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover */
+text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); 
 }
 
 
 
 main {
     display: flex;
-    justify-content: space-between; /* Separate left and right blocks */
+    justify-content: space-between; 
 }
 
 
@@ -54,28 +54,28 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Ajoute un peu d'espace en haut */
-    margin-bottom: 20px; /* Ajoute un peu d'espace en bas */
+    margin-top: 20px; 
+    margin-bottom: 20px;
 }
 
 
 .Center-block {
     text-align: center;
-    margin-left: 470px; /* Ajoute un peu d'espace à gauche */
-    margin-right: 20px; /* Ajoute un peu d'espace à droite */
+    margin-left: 470px; 
+    margin-right: 20px; 
 }
 
 
 .centered-content .Center-block h2 {
     font-size: 20px;
-    white-space: nowrap; /* Empêche le texte de se retourner */
-    margin-bottom: 10px; /* Ajuste la marge inférieure selon les besoins */
+    white-space: nowrap; 
+    margin-bottom: 10px; 
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: normal;
 }
 
 .centered-content .Center-block a.button {
-    width: 360px; /* Ajuste la largeur selon les besoins */
+    width: 360px; 
     border: 2px solid #000000;
     padding: 10px 20px;
     margin-top: 10px;
@@ -83,12 +83,12 @@ main {
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     background-color: #F0EDE8;
     transition: color 0.3s ease;
-    text-decoration: none; /* Remove default underline */
+    text-decoration: none;
 color: #000000;
 }
 
 .centered-content .Center-block a.button:hover {
-    color: #fff; /* Change la couleur du texte au survol */
+    color: #fff; 
 }
 
 
