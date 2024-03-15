@@ -8,12 +8,12 @@ body, header {
   .container {
     position: relative;
     width: 100%;
-    overflow: hidden; /* Hide any overflow content */
+    overflow: hidden; 
   }
  
   .logo img {
     position: absolute;
-    width: 350px; /* Adjust the width of the image as needed */
+    width: 280px; /* Adjust the width of the image as needed */
     height: auto; /* Maintain aspect ratio */
     display: inline-block;
     vertical-align: middle;
@@ -122,9 +122,6 @@ footer a {
 footer a:hover {
   text-decoration: underline; /* Add underline on hover for links */
 }
-
-
-
 
 
 /* Width */

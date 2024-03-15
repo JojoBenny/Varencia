@@ -1,5 +1,7 @@
+/* Melissa */
 body {
-    background-color: #F0EDE8;
+    background-color: #F0EDE8; /* Changer la couleur du background */
+
 }
   
 
@@ -8,8 +10,8 @@ body {
     right: 6px;
     position: absolute;
     top: 15px;
-    font-family: "Avenir", sans-serif;
-    font-size: small;
+    font-family: "Avenir", sans-serif; /* Changer le style de police */
+    font-size: small;  /* Changer la taille de police */
   }
   
   .logo img {
@@ -60,7 +62,7 @@ main {
 
 
 .Center-block {
-    text-align: center;
+    text-align: center;  /* Centrer tout le block */
     margin-left: 470px; 
     margin-right: 20px; 
 }
@@ -69,26 +71,26 @@ main {
 .centered-content .Center-block h2 {
     font-size: 20px;
     white-space: nowrap; 
-    margin-bottom: 10px; 
+    margin-bottom: 10px;  /* Laisser de l'espace en bas */
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     font-weight: normal;
 }
 
 .centered-content .Center-block a.button {
     width: 360px; 
-    border: 2px solid #000000;
+    border: 2px solid #000000; /* Ajouter une bordure au bouton */
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 10px;  /* Laisser de l'espace en haut */
     font-size: 16px;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     background-color: #F0EDE8;
-    transition: color 0.3s ease;
-    text-decoration: none;
+    transition: color 0.3s ease;  
+    text-decoration: none;  
 color: #000000;
 }
 
 .centered-content .Center-block a.button:hover {
-    color: #fff; 
+    color: #fff;  /* Changer de couleur lors du toucher */
 }
 
 
