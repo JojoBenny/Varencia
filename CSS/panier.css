@@ -1,31 +1,26 @@
 /* Melissa */
 body {
     background-color: #F0EDE8; /* Changer la couleur du background */
-
 }
-  
 
-
-  .text-right {
+.text-right {
     right: 6px;
     position: absolute;
     top: 15px;
     font-family: "Avenir", sans-serif; /* Changer le style de police */
     font-size: small;  /* Changer la taille de police */
-  }
-  
-  .logo img {
+}
+
+.logo img {
     width: 350px; 
     height: auto; 
     display: inline-block;
     vertical-align: middle;
 }
 
-  
-  
 main {
-    padding-top: 100px; 
-  }
+    padding-top: 5%; /* Ajuster l'espacement en haut en pourcentage de la hauteur de la fenêtre */
+}
 
 .text-right span,
 .text-right a {
@@ -40,33 +35,25 @@ main {
 
 .text-right span:hover,
 .text-right a:hover {
-color: #dcb65b;
-text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); 
+    color: #dcb65b;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); 
 }
-
-
 
 main {
     display: flex;
-    justify-content: space-between; 
+    flex-direction: column; /* Pour empiler verticalement les éléments */
+    align-items: center; /* Centrer horizontalement */
 }
-
 
 .centered-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; 
-    margin-bottom: 20px;
+    margin-top: 5%; /* Ajuster l'espacement en haut en pourcentage de la hauteur de la fenêtre */
+    margin-bottom: 5%; /* Ajuster l'espacement en bas en pourcentage de la hauteur de la fenêtre */
+    text-align: center; /* Centrer le contenu */
 }
-
 
 .Center-block {
     text-align: center;  /* Centrer tout le block */
-    margin-left: 470px; 
-    margin-right: 20px; 
 }
-
 
 .centered-content .Center-block h2 {
     font-size: 20px;
@@ -77,7 +64,7 @@ main {
 }
 
 .centered-content .Center-block a.button {
-    width: 360px; 
+    max-width: 100%; /* Ajuster la largeur du bouton pour être adaptative */
     border: 2px solid #000000; /* Ajouter une bordure au bouton */
     padding: 10px 20px;
     margin-top: 10px;  /* Laisser de l'espace en haut */
@@ -86,11 +73,67 @@ main {
     background-color: #F0EDE8;
     transition: color 0.3s ease;  
     text-decoration: none;  
-color: #000000;
+    color: #000000;
 }
 
 .centered-content .Center-block a.button:hover {
     color: #fff;  /* Changer de couleur lors du toucher */
 }
 
+#canvas {
+    display: none; /* Cacher le canvas par défaut */
+    border: 2px solid #000; /* Ajouter une bordure au canvas */
+    width: 100%; /* Définir la largeur à 100% */
+}
 
+#activate-drawing {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #000000;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    margin-top: 5%; /* Ajuster l'espacement en haut en pourcentage de la hauteur de la fenêtre */
+    margin-bottom: 5%; /* Ajuster l'espacement en bas en pourcentage de la hauteur de la fenêtre */
+}
+
+#activate-drawing:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .text-right {
+        top: 5px; /* Ajuster la position du texte en haut */
+    }
+
+    .Center-block {
+        margin-left: 10px; /* Ajuster la marge gauche pour le contenu centré */
+        margin-right: 10px; /* Ajuster la marge droite pour le contenu centré */
+    }
+
+    .centered-content .Center-block h2 {
+        font-size: 16px; /* Réduire la taille de police pour les écrans plus petits */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text-right {
+        right: 5px; /* Ajuster la position du texte à droite */
+    }
+
+    .Center-block {
+        margin-left: 5px; /* Ajuster la marge gauche pour le contenu centré */
+        margin-right: 5px; /* Ajuster la marge droite pour le contenu centré */
+    }
+
+    .centered-content .Center-block h2 {
+        font-size: 14px; /* Réduire encore la taille de police pour les écrans très petits */
+    }
+}
