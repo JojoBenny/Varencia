@@ -1,42 +1,42 @@
 body, header, main {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #F0EDE8;
+  background-color: #F0EDE8;
 }
-  
 
-  
+
+
 .text-right {
-  right: 6px;
-  position: absolute;
-  top: 15px;
-  font-family: "Avenir", sans-serif;
-  font-size: small;
+right: 6px;
+position: absolute;
+top: 15px;
+font-family: "Avenir", sans-serif;
+font-size: small;
 }
 
 .logo img {
-  width: 200px;
-  height: auto; /* Maintain aspect ratio */
-  display: inline-block;
-  vertical-align: middle;
+width: 200px;
+height: auto; /* Maintain aspect ratio */
+display: inline-block;
+vertical-align: middle;
 }
-  
+
 main {
-    padding-top: 100px; /* Adjust as needed to create space below the logo */
-  }
+  padding-top: 100px; /* Adjust as needed to create space below the logo */
+}
 
 .text-right span,
 .text-right a {
-    margin-left: 5px; /* Add some spacing between the text elements */
-    color: rgb(116, 106, 106);
-    background-color: transparent; /* Make the background transparent */
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-family: "Avenir", sans-serif;
-    text-decoration: none; /* Remove default underline */
+  margin-left: 5px; /* Add some spacing between the text elements */
+  color: rgb(116, 106, 106);
+  background-color: transparent; /* Make the background transparent */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: "Avenir", sans-serif;
+  text-decoration: none; /* Remove default underline */
 }
 
 .text-right span:hover,
@@ -45,134 +45,165 @@ color: #dcb65b;
 text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover */
 }
 
-  
+
 .image-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping of image wrappers */
-    margin-bottom: 50px; /* Adjust spacing between rows */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of image wrappers */
+  margin-bottom: 50px; /* Adjust spacing between rows */
 }
 
 .image-wrapper {
-    flex: 0 1 calc(50% - 20px); /* Set width of image wrapper */
-    margin: 0 10px 20px; /* Adjust spacing between image pairs */
-    text-align: center;
-    position: relative; /* Set positioning context */
+  flex: 0 1 calc(50% - 20px); /* Set width of image wrapper */
+  margin: 0 10px 20px; /* Adjust spacing between image pairs */
+  text-align: center;
+  position: relative; /* Set positioning context */
 }
 
 .image-wrapper img {
-    width: 100%; /* Ensure image fills its container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  width: 100%; /* Ensure image fills its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 .price {
-    position: absolute; /* Position the price relative to its container */
-    bottom: -20px; /* Position it under the h1 element */
-    left: 0; /* Align it to the left */
-    padding-left: 55px; /* Adjust as needed to move the text to the right */
-    font-family: 'Aktiv Grotesk', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-    font-size: large;
+  position: absolute; /* Position the price relative to its container */
+  bottom: -20px; /* Position it under the h1 element */
+  left: 0; /* Align it to the left */
+  padding-left: 55px; /* Adjust as needed to move the text to the right */
+  font-family: 'Aktiv Grotesk', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-size: large;
 }
-  
-  .image-wrapper img {
-    width: 500px; /* Set the desired width */
-    height: 500px; /* Set the desired height */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-  }
-  
-  .image-text {
-    text-align: left; /* Align the text to the left */
-    margin-top: 10px; /* Adjust spacing between image and text */
-    margin-bottom: 30px; /* Adjust as needed */
-    padding-left: 55px; /* Adjust as needed to move the text to the right */
-    font-size: x-large;
-    font-family: "Cormorant Infant", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-  }
-  
+
+.image-wrapper img {
+  width: 500px; /* Set the desired width */
+  height: 500px; /* Set the desired height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.image-text {
+  text-align: left; /* Align the text to the left */
+  margin-top: 10px; /* Adjust spacing between image and text */
+  margin-bottom: 30px; /* Adjust as needed */
+  padding-left: 55px; /* Adjust as needed to move the text to the right */
+  font-size: x-large;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}
+
 /* Width */
 ::-webkit-scrollbar {
-  width: 12px; /* width of the scrollbar */
+width: 12px; /* width of the scrollbar */
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* color of the track */
+background: #f1f1f1; /* color of the track */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; /* color of the scrollbar handle */
+background: #888; /* color of the scrollbar handle */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* color of the scrollbar handle on hover */
+background: #555; /* color of the scrollbar handle on hover */
 }
 
 
 /* Define the keyframes for the animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0; /* Start with opacity 0 */
-        transform: translateY(20px); /* Start slightly below its final position */
-    }
-    to {
-        opacity: 1; /* End with opacity 1 */
-        transform: translateY(0); /* End at its final position */
-    }
+  from {
+      opacity: 0; /* Start with opacity 0 */
+      transform: translateY(20px); /* Start slightly below its final position */
+  }
+  to {
+      opacity: 1; /* End with opacity 1 */
+      transform: translateY(0); /* End at its final position */
+  }
 }
 
 /* Apply the animation to the image wrappers */
 .image-wrapper:nth-child(-n+2) {
-    animation: fadeIn 1s ease forwards; /* Apply animation to the first two image wrappers */
+  animation: fadeIn 1s ease forwards; /* Apply animation to the first two image wrappers */
 }
 
 
 .image-wrapper {
-    position: relative;
+  position: relative;
 }
 
 .image-wrapper img {
-    transition: filter 0.3s ease;
+  transition: filter 0.3s ease;
 }
 
 .image-wrapper:hover img {
-    filter: brightness(70%); /* Reduce the brightness of the image */
+  filter: brightness(70%); /* Reduce the brightness of the image */
 }
 
 .preview-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .image-wrapper:hover .preview-button {
-    opacity: 1;
+  opacity: 1;
 }
 
 .preview-button a {
-    padding: 8px 20px; /* Adjust padding for the button */
-    text-decoration: none;
-    background-color: transparent; /* Set background color to transparent */
-    color: #804d1a; /* Set text color */
-    border: 2px solid #636262; /* Add dark border */
-    border-radius: 5px; /* Add border-radius for rounded corners */
-    cursor: pointer;
-    font-size: 14px; /* Adjust font size */
-    font-weight: bold; /* Add bold font weight */
-    text-transform: uppercase; /* Convert text to uppercase */
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transition */
+  padding: 8px 20px; /* Adjust padding for the button */
+  text-decoration: none;
+  background-color: transparent; /* Set background color to transparent */
+  color: #804d1a; /* Set text color */
+  border: 2px solid #636262; /* Add dark border */
+  border-radius: 5px; /* Add border-radius for rounded corners */
+  cursor: pointer;
+  font-size: 14px; /* Adjust font size */
+  font-weight: bold; /* Add bold font weight */
+  text-transform: uppercase; /* Convert text to uppercase */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transition */
 }
 
 .preview-button a:hover {
-    color: #ce9f9f; /* Change text color on hover */
+  color: #ce9f9f; /* Change text color on hover */
+}
+
+
+.bande {
+overflow: hidden;
+position: relative;
+top: 30px; /* Déplace la bande vers le bas de 20 pixels */
+height: 50px; /* Hauteur de la bande */
+background-color: #debd70;
+color: white;
+}
+
+.texte {
+display: flex;
+animation: defilement 30s linear infinite; /* Durée de l'animation de 40 secondes */
+transition: transform 0.5s ease; /* Transition pour un effet plus fluide */
+}
+
+.texte p {
+white-space: nowrap;
+margin-right: 30px; /* Espace entre chaque phrase */
+}
+
+.texte a {
+color: white;
+text-decoration: underline;
+}
+
+@keyframes defilement {
+0% { transform: translateX(100%); }
+100% { transform: translateX(-100%); }
 }
