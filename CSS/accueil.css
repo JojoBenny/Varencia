@@ -1,3 +1,16 @@
+/* Media Query pour rendre la page adaptable à différents écrans */
+@media only screen and (max-width: 600px) {
+  /* Styles pour les écrans de petite taille (par exemple, smartphones) */
+  .button {
+      font-size: 14px;
+      padding: 10px 40px;
+  }
+  #questionJouer {
+      font-size: 14px;
+  }
+}
+
+
 /* Resetting default margin and padding for body and header */
 body, header {
   position: relative; /* Ensure the header is positioned relatively */
@@ -53,10 +66,10 @@ text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.913); /* Add text shadow on hover
 }
 
    .image {
-    /*position: absolute;*/
+    /position: absolute;/
     top: 0;
     left: 50%;
-    /*transform: translateX(-50%);*/
+    /transform: translateX(-50%);/
     width: 100vw; /* Set the width to cover the viewport width */
     max-height: 100%; /* Set a maximum height to maintain aspect ratio */
   }
@@ -142,4 +155,39 @@ footer a:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* color of the scrollbar handle on hover */
+}
+
+#questionJouer {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  text-align: center;
+  background-color: transparent; /* Définissez le fond transparent */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  font-family: 'Avenir', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+#questionJouer p {
+  margin: 0 0 10px;
+  color: white;
+}
+
+#questionJouer button {
+  background-color: #dcb65b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#questionJouer button:hover {
+  background-color: #c39b3a;
 }
