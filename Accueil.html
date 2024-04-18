@@ -36,6 +36,12 @@
         <span class="top-text">Acheter</span>
         <span class="bottom-text">Maintenant</span>
     </a>
+
+    <div id="questionJouer">
+      <p>Êtes-vous d'humeur à jouer ?</p>
+      <button onclick="commencerJeu()">Oui</button>
+      <button onclick="passerDirect()">Non</button>
+  </div>
     </div>
 
 </main>
@@ -47,6 +53,18 @@
     </p>
   </div>
 </footer>
+
+<script>
+  function commencerJeu() {
+      // Redirigez l'utilisateur vers le jeu ou l'énigme
+      window.location.href = "Game.html"; // Remplacez "jeu.html" par le chemin de votre jeu ou énigme
+  }
+
+  function passerDirect() {
+      // Laissez l'utilisateur passer directement
+      alert("D'accord, profitez de la navigation sur notre site !");
+  }
+</script>
 
 </body>
 </html>
