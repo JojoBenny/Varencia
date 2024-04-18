@@ -48,6 +48,7 @@
                 <option value="medium">400,00 $</option>
                 <option value="medium">500,00 $</option>
             </select>
+            <span id="size-error" class="error-message">Veuillez sélectionner une valeur avant d'ajouter au panier.</span>
         </div>
         
         <!-- Quantity selection -->
@@ -56,14 +57,30 @@
             <input type="number" id="quantity" name="quantity" value="1" min="1">
         </div>
 
-        <button id="add-to-cart">AJOUTER AU PANIER</button>
-    </div>
+        <button type="button" id="add-to-cart-button">AJOUTER AU PANIER</button>
+      </div>
     
 
 
 
 </main>
-     <footer></footer>
 
+<script>
+  document.getElementById('add-to-cart-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Pour empêcher le comportement par défaut du formulaire
+
+    // Récupérer la valeur sélectionnée dans le menu déroulant de la taille
+    var selectedSize = document.getElementById('size').value;
+    var sizeError = document.getElementById('size-error');
+
+    // Vérifier si la taille sélectionnée est différente de "SELECTIONNER TAILLE"
+    if (selectedSize !== 'small') {
+        sizeError.style.display = 'none'; // Cacher le message d'erreur s'il est affiché
+        alert('Le produit a été ajouté au panier.');
+    } else {
+        sizeError.style.display = 'block'; // Afficher le message d'erreur
+    }
+});
+</script>
 </body>
 </html>
