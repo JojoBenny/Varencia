@@ -38,7 +38,7 @@
 
 
     <main>
-        <form action="submit.php" method="POST">
+        <form action="#" method="POST" onsubmit="showMessageSent()">
             <div class="form-group">
                 <input type="text" id="name" name="name" required placeholder="Votre nom">
             </div>
@@ -88,6 +88,14 @@
       
     </main>
 <footer></footer>
+
+
+<script>
+    // Fonction pour afficher l'alerte lorsque le formulaire est soumis
+    function showMessageSent() {
+        alert("Message envoyé !");
+    }
+</script>
 
 </body>
 </html>
