@@ -51,6 +51,7 @@
                 <option value="medium">40</option>
                 <option value="medium">41</option>
             </select>
+            <span id="size-error" class="error-message">Veuillez sélectionner une taille avant d'ajouter au panier.</span>
         </div>
         
         <div class="quantity-selection">
@@ -58,14 +59,16 @@
             <input type="number" id="quantity" name="quantity" value="1" min="1">
         </div>
 
-        <button id="add-to-cart">AJOUTER AU PANIER</button>
+        <form id="add-to-cart">
+          <button type="button" id="add-to-cart-button">AJOUTER AU PANIER</button>
+        </form>
     </div>
-    
 
 
 
 </main>
-     <footer></footer>
+<script src="../JavaScript/product.js"></script>
+
 
 </body>
 </html>
